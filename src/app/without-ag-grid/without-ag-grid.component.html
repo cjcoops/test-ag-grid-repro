@@ -1,0 +1,11 @@
+<h2>Without ag grid</h2>
+<div>
+  <input type="text" [formControl]="searchControl" />
+</div>
+
+<ng-container *ngIf="rowData">
+  <div class="posts" *ngFor="let post of rowData">
+    <div>{{ post.id }}</div>
+    <div>{{ post.title }}</div>
+  </div>
+</ng-container>

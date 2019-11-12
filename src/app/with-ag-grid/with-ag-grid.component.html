@@ -1,0 +1,13 @@
+<h2>With ag grid</h2>
+<div>
+  <input type="text" [formControl]="searchControl" />
+</div>
+
+<ag-grid-angular
+  style="width: 500px; height: 500px;"
+  class="ag-theme-balham"
+  [rowData]="rowData"
+  [columnDefs]="columnDefs"
+  [modules]="modules"
+>
+</ag-grid-angular>
