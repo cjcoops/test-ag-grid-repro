@@ -38,6 +38,8 @@ describe('WithAgGridComponent', () => {
     tick(100);
     spectator.detectChanges();
 
+    tick(1000);
+
     expect(dataService.fetch).toHaveBeenCalled();
     expect(spectator.query(byText('testing ag grid'))).toExist();
   }));
